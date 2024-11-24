@@ -1,0 +1,76 @@
+Python 3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> def calculate_deposit(amount, period):
+...         """Функція розрахунку депозиту."""
+...             rates = {
+...                     5: 1.003003602160648077,
+...                             10: 1.015101656065041019,
+...                                     20: 1.061741176240898406,
+...                                             60: 1.612990934655037505,
+...                                                 }
+...
+  File "<python-input-0>", line 3
+    rates = {
+IndentationError: unexpected indent
+>>>     if amount > 5000000:
+  File "<python-input-1>", line 1
+    if amount > 5000000:
+IndentationError: unexpected indent
+>>>         return "Максимальна сума — 5,000,000!"
+  File "<python-input-2>", line 1
+    return "Максимальна сума — 5,000,000!"
+IndentationError: unexpected indent
+>>>
+>>>     if period in rates:
+  File "<python-input-4>", line 1
+    if period in rates:
+IndentationError: unexpected indent
+>>>         final_amount = amount * rates[period]
+  File "<python-input-5>", line 1
+    final_amount = amount * rates[period]
+IndentationError: unexpected indent
+>>>         return f"Сума після {period} днів: {final_amount:.2f}"
+  File "<python-input-6>", line 1
+    return f"Сума після {period} днів: {final_amount:.2f}"
+IndentationError: unexpected indent
+>>>     else:
+  File "<python-input-7>", line 1
+    else:
+IndentationError: unexpected indent
+>>>         return "Неправильний період! Оберіть із: 5, 10, 20, 60."
+  File "<python-input-8>", line 1
+    return "Неправильний період! Оберіть із: 5, 10, 20, 60."
+IndentationError: unexpected indent
+>>>
+>>>
+>>> def main():
+...             print("Вітаємо у калькуляторі депозиту!")
+...                 try:
+...                                     amount = float(input("Введіть суму (грн): "))
+...                                             print("Доступні періоди: 5, 10, 20, 60 днів.")
+...                                                     period = int(input("Введіть період (днів): "))
+...
+  File "<python-input-11>", line 3
+    try:
+IndentationError: unexpected indent
+>>>         result = calculate_deposit(amount, period)
+  File "<python-input-12>", line 1
+    result = calculate_deposit(amount, period)
+IndentationError: unexpected indent
+>>>         print(result)
+  File "<python-input-13>", line 1
+    print(result)
+IndentationError: unexpected indent
+>>>     except ValueError:
+  File "<python-input-14>", line 1
+    except ValueError:
+IndentationError: unexpected indent
+>>>         print("Помилка: введіть числові значення!")
+  File "<python-input-15>", line 1
+    print("Помилка: введіть числові значення!")
+IndentationError: unexpected indent
+>>>
+>>>
+>>> if __name__ == "__main__":
+...                 main()
+...                 deposit_calculator.py
